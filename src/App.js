@@ -2,8 +2,17 @@ import React from 'react';
 import './App.css';
 import LineGraph from './components/LineGraph';
 import CovidSummary from './components/CovidSummary';
+import axios from './axios';
 
 function App() {
+
+
+  useEffect(() => {
+    
+
+
+  }, [])
+
   return (
     <div className="App">
       <CovidSummary 
