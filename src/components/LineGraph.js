@@ -17,13 +17,13 @@ import { Line } from 'react-chartjs-2';
         }}
     >
             <Line data = {{
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: props.label.map(l => l.substr(0, 10)),
         datasets: [
             {
-                label: 'My First dataset',
-                fill: false,
+                label: 'Corona Virus cases across the country',
+                fill: true,
                 lineTension: 0.1,
-                backgroundColor: 'rgba(75,192,192,0.4)',
+                backgroundColor: 'rgba(55,192,192,0.4)',
                 borderColor: 'rgba(75,192,192,1)',
                 borderCapStyle: 'butt',
                 borderDash: [],
